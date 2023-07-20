@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/enabiz"
+    tools:context=".LoginActivity">
+
+    <ImageView
+        android:id="@+id/img_logo"
+        android:layout_width="275dp"
+        android:layout_height="121dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="68dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/enabizlogo" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="350dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="21dp"
+        app:cardBackgroundColor="@color/enabiz"
+        app:cardCornerRadius="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_logo"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:background="@color/gri"
+            app:srcCompat="@drawable/person_white" />
+
+        <EditText
+            android:id="@+id/edt_tc_giris"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+
+            android:layout_marginStart="53dp"
+            android:ems="10"
+            android:hint="T.C. Kimlik Numaranısı Giriniz"
+            android:inputType="text"
+            tools:ignore="TouchTargetSizeCheck" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView2"
+        android:layout_width="350dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="21dp"
+        app:cardBackgroundColor="@color/enabiz"
+        app:cardCornerRadius="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="50dp"
+            android:layout_height="45dp"
+            android:background="@color/gri"
+            app:srcCompat="@drawable/lock_white" />
+
+        <EditText
+            android:id="@+id/edt_sifre_giris"
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="53dp"
+            android:ems="10"
+            android:hint="e-Nabız Şifrenizi Giriniz"
+            android:drawableRight="@drawable/baseline_visibility_off_24"
+            android:inputType="text"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <Button
+
+            android:id="@+id/btn_giris"
+            android:layout_width="70dp"
+            android:layout_height="45dp"
+
+            android:layout_marginStart="280dp"
+            android:background="@drawable/buttonshape"
+            android:shadowColor="#A8A8A8"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="5"
+            android:text="Giriş"
+            android:textColor="#FFFFFF"
+            android:textSize="10sp"
+            tools:ignore="TouchTargetSizeCheck" />
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/btn_mobil_imza_giris"
+        android:layout_width="170dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/buttonshape"
+        android:shadowColor="#A8A8A8"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="5"
+        android:text="Mobil İmza ile Giriş"
+        android:textColor="#FFFFFF"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btn_edevlet_giris"
+        app:layout_constraintTop_toBottomOf="@+id/cardView2" />
+
+    <Button
+        android:id="@+id/btn_edevlet_giris"
+        android:layout_width="170dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/buttonshape"
+        android:shadowColor="#A8A8A8"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="5"
+        android:text="e-Devlet ile Giriş"
+        android:textColor="#FFFFFF"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toStartOf="@+id/btn_mobil_imza_giris"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView2" />
+
+    <TextView
+        android:id="@+id/txt_sifremi_unuttum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="408dp"
+        android:text="Şifremi Unuttum"
+        android:textColor="@color/gri"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btn_enabiz_hesap_yok"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="330dp"
+        android:background="@drawable/cardviewshape"
+        android:text="e-Nabız Hesabım Yok"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btn_nasil_enabizli_olurum"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="258dp"
+        android:background="@drawable/cardviewshape"
+        android:text="Nasıl e-Nabız'lı olurum?"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="TextSizeCheck" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="275dp"
+        android:layout_height="244dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/yazilar" />
+</androidx.constraintlayout.widget.ConstraintLayout>

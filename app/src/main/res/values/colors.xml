@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="enabiz">#4e546c</color>
+    <color name="red">#CC0000</color>
+    <color name="gri">#8E94AC</color>
+    <color name="btn">#e74848</color>
+    <color name="dgsBlue">#8286a6</color>
+
+
+</resources>

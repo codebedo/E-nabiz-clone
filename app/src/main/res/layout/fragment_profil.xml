@@ -1,0 +1,516 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfilFragment">
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/appBar"
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="NotSibling">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:ignore="ExtraText">
+
+            <com.google.android.material.appbar.AppBarLayout
+                android:id="@+id/appBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#353a4f"
+                android:elevation="4dp"
+                android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp">
+
+                    <ImageView
+                        android:id="@+id/imgCalendar"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/calender"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </com.google.android.material.appbar.AppBarLayout>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profile_image"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_marginStart="136dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="137dp"
+                android:src="@drawable/ben"
+                app:civ_border_color="#7A7A7A"
+                app:civ_border_width="2dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/appBar" />
+
+            <TextView
+                android:id="@+id/txt_ad_soyad"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="125dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="125dp"
+                android:text="Hazar Özsoy"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/profile_image" />
+
+            <TextView
+                android:id="@+id/txt_sehir"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="161dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="161dp"
+                android:text="İstanbul"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txt_ad_soyad" />
+
+            <TextView
+                android:id="@+id/txt_hekim_sehir"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="17dp"
+                android:layout_marginEnd="40dp"
+                android:text="Antalya MuratPaşa 088 Nolu Aile Hekimliği "
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txt_sehir" />
+
+            <TextView
+                android:id="@+id/txt_degistir"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="171dp"
+                android:layout_marginTop="17dp"
+                android:layout_marginEnd="171dp"
+                android:text="Değiştir"
+                android:textColor="@color/red"
+                android:textSize="15sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txt_hekim_sehir" />
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="60dp"
+                android:layout_height="51dp"
+                android:layout_marginStart="7dp"
+                android:layout_marginTop="8dp"
+                app:layout_constraintBottom_toTopOf="@+id/txt_boy"
+                app:layout_constraintStart_toEndOf="@+id/imageView4"
+                app:layout_constraintTop_toBottomOf="@+id/txt_degistir"
+                app:srcCompat="@drawable/boy" />
+
+            <TextView
+                android:id="@+id/txt_kan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="71dp"
+                android:text="A Rh +"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/txt_kilo"
+                app:layout_constraintTop_toBottomOf="@+id/imageView8" />
+
+            <TextView
+                android:id="@+id/txt_kilo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="27dp"
+                android:text="101,00 kg"
+                app:layout_constraintEnd_toStartOf="@+id/txt_kan"
+                app:layout_constraintStart_toEndOf="@+id/txt_boy"
+                app:layout_constraintTop_toBottomOf="@+id/imageView7" />
+
+            <TextView
+                android:id="@+id/txt_boy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="24dp"
+                android:text="177 cm"
+                app:layout_constraintEnd_toStartOf="@+id/txt_kilo"
+                app:layout_constraintStart_toEndOf="@+id/txt_yas"
+                app:layout_constraintTop_toBottomOf="@+id/imageView6" />
+
+            <TextView
+                android:id="@+id/txt_yas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="66dp"
+                android:layout_marginEnd="23dp"
+                android:text="21 Yaş"
+                app:layout_constraintEnd_toStartOf="@+id/txt_boy"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="60dp"
+                android:layout_height="51dp"
+                android:layout_marginStart="58dp"
+                android:layout_marginTop="45dp"
+                app:layout_constraintBottom_toTopOf="@+id/txt_yas"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txt_hekim_sehir"
+                app:srcCompat="@drawable/yas" />
+
+            <ImageView
+                android:id="@+id/imageView7"
+                android:layout_width="60dp"
+                android:layout_height="51dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="8dp"
+                app:layout_constraintBottom_toTopOf="@+id/txt_kilo"
+                app:layout_constraintStart_toEndOf="@+id/imageView6"
+                app:layout_constraintTop_toBottomOf="@+id/txt_degistir"
+                app:srcCompat="@drawable/kilo" />
+
+            <ImageView
+                android:id="@+id/imageView8"
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="13dp"
+                android:layout_marginTop="45dp"
+                android:layout_marginBottom="1dp"
+                app:layout_constraintBottom_toTopOf="@+id/txt_kan"
+                app:layout_constraintStart_toEndOf="@+id/imageView7"
+                app:layout_constraintTop_toBottomOf="@+id/txt_hekim_sehir"
+                app:srcCompat="@drawable/kan"
+                tools:ignore="ImageContrastCheck" />
+
+            <Button
+                android:id="@+id/covid19"
+                android:layout_width="166dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="113dp"
+                android:layout_marginTop="28dp"
+                android:layout_marginEnd="114dp"
+                android:background="@drawable/buttonshape2"
+                android:text="COVID-19 Aşı Durumu"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txt_kilo"
+                tools:ignore="TextSizeCheck" />
+
+            <ImageView
+                android:id="@+id/img_ilaclarim"
+                android:layout_width="89dp"
+                android:layout_height="105dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="129dp"
+                android:background="@drawable/zil"
+                android:clickable="true"
+                app:layout_constraintEnd_toStartOf="@+id/img_hastaneler"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txt_yas"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <ImageView
+                android:id="@+id/img_hastaneler"
+                android:layout_width="89dp"
+                android:layout_height="105dp"
+                android:layout_marginTop="53dp"
+                android:background="@drawable/hastaneler"
+                app:layout_constraintEnd_toStartOf="@+id/img_nobectieczaneler"
+                app:layout_constraintStart_toEndOf="@+id/img_ilaclarim"
+                app:layout_constraintTop_toBottomOf="@+id/covid19" />
+
+            <ImageView
+                android:id="@+id/img_nobectieczaneler"
+                android:layout_width="93dp"
+                android:layout_height="105dp"
+                android:layout_marginTop="53dp"
+                android:background="@drawable/nobetcieczane"
+                android:clickable="true"
+                app:layout_constraintEnd_toStartOf="@+id/img_bildirimler"
+                app:layout_constraintStart_toEndOf="@+id/img_hastaneler"
+                app:layout_constraintTop_toBottomOf="@+id/covid19"
+                tools:ignore="ImageContrastCheck,SpeakableTextPresentCheck" />
+
+            <ImageView
+                android:id="@+id/img_bildirimler"
+                android:layout_width="89dp"
+                android:layout_height="105dp"
+                android:layout_marginTop="130dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/bildirimler"
+                android:clickable="true"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/img_nobectieczaneler"
+                app:layout_constraintTop_toBottomOf="@+id/txt_kan"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <ImageView
+                android:id="@+id/imageView29"
+                android:layout_width="396dp"
+                android:layout_height="327dp"
+                android:layout_marginTop="19dp"
+                android:background="@drawable/ss1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/img_ilaclarim" />
+
+            <Button
+                android:id="@+id/btn_hastaneziyaret"
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="86dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="87dp"
+                android:background="@drawable/buttonshape3"
+                android:text="Hastane Ziyaretlerim"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView29" />
+            />
+
+            <ImageView
+                android:id="@+id/neyim_var"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/neyimvar"
+                android:clickable="true"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btn_hastaneziyaret"
+                tools:ignore="MissingConstraints,SpeakableTextPresentCheck" />
+
+            <ImageView
+                android:id="@+id/akilli_asistan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:background="@drawable/akilliasistan"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/neyim_var"
+                tools:ignore="MissingConstraints" />
+
+            <ImageView
+                android:id="@+id/img_hastaliklarim"
+                android:layout_width="197dp"
+                android:clickable="true"
+                android:layout_height="wrap_content"
+                android:background="@drawable/hastaliklarim"
+                app:layout_constraintEnd_toStartOf="@+id/img_recetelerim"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/akilli_asistan" />
+
+            <ImageView
+                android:id="@+id/img_recetelerim"
+                android:layout_width="197dp"
+                android:clickable="true"
+                android:layout_height="wrap_content"
+                android:background="@drawable/recetelerim"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/img_hastaliklarim"
+                app:layout_constraintTop_toBottomOf="@+id/akilli_asistan" />
+
+            <ImageView
+                android:id="@+id/img_radyoloji"
+                android:layout_width="197dp"
+                android:clickable="true"
+                android:layout_height="wrap_content"
+                android:background="@drawable/radyolojigoruntulerim"
+                app:layout_constraintEnd_toStartOf="@+id/img_tahlillerim"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/img_hastaliklarim" />
+
+            <ImageView
+                android:id="@+id/img_tahlillerim"
+                android:layout_width="197dp"
+                android:clickable="true"
+                android:layout_height="wrap_content"
+                android:background="@drawable/tahlillerim"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/img_hastaliklarim"
+                app:layout_constraintTop_toBottomOf="@+id/img_hastaliklarim" />
+
+            <ImageView
+                android:id="@+id/img_malzemevecihazlar"
+                android:layout_width="197dp"
+                android:clickable="true"
+                android:layout_height="wrap_content"
+                android:background="@drawable/malzemevecihazlarim"
+                app:layout_constraintEnd_toStartOf="@+id/img_raporlarim"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/img_radyoloji" />
+
+            <ImageView
+                android:id="@+id/img_raporlarim"
+                android:layout_width="197dp"
+                android:clickable="true"
+                android:layout_height="wrap_content"
+                android:background="@drawable/raporlarim"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@id/img_malzemevecihazlar"
+                app:layout_constraintTop_toBottomOf="@+id/img_tahlillerim" />
+
+            <ImageView
+                android:id="@+id/img_alerjilerim"
+                android:layout_width="197dp"
+                android:clickable="true"
+                android:layout_height="wrap_content"
+                android:background="@drawable/alerjilerim"
+                app:layout_constraintEnd_toStartOf="@+id/img_organbagisi"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/img_malzemevecihazlar" />
+
+            <ImageView
+                android:id="@+id/img_acildurumnotlarim"
+                android:layout_width="197dp"
+                android:clickable="true"
+                android:layout_height="wrap_content"
+                android:background="@drawable/acildurumnotlarim"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/img_alerjilerim"
+                app:layout_constraintTop_toBottomOf="@+id/img_raporlarim" />
+
+            <ImageView
+                android:id="@+id/img_dokumanlar"
+                android:layout_width="197dp"
+                android:clickable="true"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="1dp"
+                android:background="@drawable/dokumanlerim"
+                app:layout_constraintEnd_toStartOf="@+id/img_organbagisi"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/img_alerjilerim" />
+
+            <ImageView
+                android:id="@+id/img_organbagisi"
+                android:layout_width="197dp"
+                android:clickable="true"
+                android:layout_height="wrap_content"
+                android:background="@drawable/organ"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/img_dokumanlar"
+                app:layout_constraintTop_toBottomOf="@+id/img_acildurumnotlarim" />
+
+            <ImageView
+                android:id="@+id/img_asitakvimi"
+                android:layout_width="197dp"
+                android:clickable="true"
+                android:layout_height="wrap_content"
+                android:background="@drawable/asitakvimi"
+                app:layout_constraintEnd_toStartOf="@+id/img_uykuverisi"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/img_dokumanlar" />
+
+            <ImageView
+                android:id="@+id/img_uykuverisi"
+                android:layout_width="197dp"
+                android:clickable="true"
+                android:layout_height="wrap_content"
+                android:background="@drawable/uykuverisi"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/img_asitakvimi"
+                app:layout_constraintTop_toBottomOf="@+id/img_organbagisi" />
+
+            <ImageView
+                android:id="@+id/img_kemikiligi"
+                android:layout_width="197dp"
+                android:clickable="true"
+                android:layout_height="wrap_content"
+                android:background="@drawable/kemikiligivekan"
+                app:layout_constraintEnd_toStartOf="@+id/img_sigorta"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/img_asitakvimi" />
+
+            <ImageView
+                android:id="@+id/img_sigorta"
+                android:layout_width="197dp"
+                android:clickable="true"
+                android:layout_height="wrap_content"
+                android:background="@drawable/sigortaislemleri"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/img_kemikiligi"
+                app:layout_constraintTop_toBottomOf="@+id/img_uykuverisi" />
+
+            <ImageView
+                android:id="@+id/img_epikriz"
+                android:layout_width="197dp"
+                android:clickable="true"
+                android:layout_height="wrap_content"
+                android:background="@drawable/epikrizbilgilerim"
+
+                app:layout_constraintEnd_toStartOf="@+id/img_patoloji"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/img_kemikiligi" />
+
+            <ImageView
+                android:id="@+id/img_patoloji"
+                android:layout_width="197dp"
+                android:clickable="true"
+                android:layout_height="wrap_content"
+                android:background="@drawable/patolojibilgilerim"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/img_epikriz"
+                app:layout_constraintTop_toBottomOf="@+id/img_sigorta" />
+
+            <ImageView
+                android:id="@+id/img_hastayakinibilgilendirme"
+                android:layout_width="wrap_content"
+                android:clickable="true"
+                android:layout_height="wrap_content"
+                android:background="@drawable/hastayakinibilgilendirme"
+
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/img_epikriz" />
+
+            <ImageView
+                android:id="@+id/img_giyilebilirtek"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/giyilebilirtek"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/img_hastayakinibilgilendirme" />
+
+            <ImageView
+                android:id="@+id/lastss"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/lastss"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/img_giyilebilirtek" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+</FrameLayout>

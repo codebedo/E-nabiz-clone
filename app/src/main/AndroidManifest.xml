@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Enabiz_copy"
+        tools:targetApi="31">
+        <activity
+            android:name=".SigortaEkrani"
+            android:exported="false" />
+        <activity
+            android:name=".KemikiligiKanBagisiEkrani"
+            android:exported="false" />
+        <activity
+            android:name=".UykuVerisiEkrani"
+            android:exported="false" />
+        <activity
+            android:name=".AsitakvimiEkrani"
+            android:exported="false" />
+        <activity
+            android:name=".EkranBagisiEkrani"
+            android:exported="false" />
+        <activity
+            android:name=".DokumanlarimEkrani"
+            android:exported="false" />
+        <activity
+            android:name=".AcilDurumNotEkrani"
+            android:exported="false" />
+        <activity
+            android:name=".AlerliEkrani"
+            android:exported="false" />
+        <activity
+            android:name=".MalzemeVeCihazlar"
+            android:exported="false" />
+        <activity
+            android:name=".TahlilEkrani"
+            android:exported="false" />
+        <activity
+            android:name=".RadyolojiEktani"
+            android:exported="false" />
+        <activity
+            android:name=".ReceteEkrani"
+            android:exported="false" />
+        <activity
+            android:name=".HastaliklarimEkrani"
+            android:exported="false" />
+        <activity
+            android:name=".EDevletGirisActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AkilliAsistan"
+            android:exported="false" />
+        <activity
+            android:name=".Bildirimlerim"
+            android:exported="false" />
+        <activity
+            android:name=".ilaclarim"
+            android:exported="false" />
+        <activity
+            android:name=".CovidDurum"
+            android:exported="false" />
+        <activity
+            android:name=".HomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

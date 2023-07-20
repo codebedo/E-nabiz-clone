@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/action_grafiklerim"
+        android:title="Grafiklerim"
+        android:icon="@drawable/grafik" />
+    <item
+        android:id="@+id/action_randevularim"
+        android:title="Randevularım"
+        android:icon="@drawable/calender" />
+    <item
+        android:id="@+id/action_profil"
+        android:title="Profilim"
+        android:icon="@drawable/person_white" />
+    <item
+        android:id="@+id/action_guvenlik"
+        android:title="Güvenlik"
+        android:icon="@drawable/settings" />
+    <item
+        android:id="@+id/action_acildurum"
+        android:title="Acil Durum"
+        android:icon="@drawable/acildurum112" />
+</menu>
